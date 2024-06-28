@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div classname='mp'></div>
+  <div classname='mp_heading'>
+    <h1>Internship/Major Project</h1>
+    <p>* Required</p>
+  </div>
+  
+  <form method="post" enctype="multipart/form-data" action="submit.php">
+
+    <div classname='mp_ques'>
+      <p>1. Student Name*</p>
+      <label for='name'></label>
+      <input type='text' id='name' name='name' required><br>
+
+      <p>2. Registration Number*</p>
+      <label for='rgno'></label>
+      <input type='text' id='rgno' name='rgno' required><br>
+
+      <p>3. Section*</p>
+      <input type="radio" id="html" name="sec" value="HTML">
+      <label for="secA">A</label><br>
+      <input type="radio" id="html" name="sec" value="HTML">
+      <label for="secB">B</label><br>
+      <input type="radio" id="html" name="sec" value="HTML">
+      <label for="secC">C</label><br>
+      <input type="radio" id="html" name="sec" value="HTML">
+      <label for="secD">D</label><br>
+
+      <p>4. Mobile Number*</p>
+      <label for='mbno'></label>
+      <input type='text' id='mbno' name='mbno' required><br>
+
+      <p>5. MUJ Email Address(xxxx@muj.manipal.edu)*</p>
+      <label for='eadd'></label>
+      <input type='email' id='email' name='email' style="width:400px;height:20px"  required><br>
+
+      <p>6. Alternate email address(Gmail preferred)*</p>
+      <label for='gmail'></label>
+      <input type='email' id='gmail' name='gmail' style="width:400px;height:20px" required><br>
+
+      <p>7. Doing internship or Internal Major Project</p>
+      <input type="radio" id="html" name="inter" value="HTML">
+      <label for="html">Internship</label><br>
+      <input type="radio" id="html" name="proj" value="HTML">
+      <label for="html">Internal Major Project</label><br>
+
+      <p>8. Internship Company Name(Internal Major Project candidate may write MUJ)*</p>
+      <label for='compname'></label>
+      <input type='text' id='compname' name='compname' required><br>
+
+      <p>9. Complete Address of the company(Internal Major Project candidate may write MUJ)*</p>
+      <label for='add'></label>
+      <input type='text' id='add' name='add' required><br>
+
+      <p>10. City where the company is located(Internal Major Project candidate may write MUJ)*</p>
+      <label for='city'></label>
+      <input type="text" id="city" name="city" required><br>
+
+      <p>11. Major Project/Internship Title*</p>
+      <label for="title"></label>
+      <input type="text" id="title" name="title" required><br>
+
+      <p>12. Major Project/Internship Project start date(exact date of start)*</p>
+      <label for="startdate"></label>
+      <input type="date" id="startdate" name="startdate" required><br>
+
+      <p>13. Major Project/Internship Project completion date(tentative)*</p>
+      <label for="enddate"></label>
+      <input type="date" id="enddate" name="enddate" required><br>
+
+      <p>14. Major Project/Internship Project duration in months(tentative)*</p>
+      <label for="duration"></label>
+      <input type="text" id="duration" name="duration" required><br>
+
+      <p>15. Internship Supervisor Name(from company)/(Internal Major Project candidate may write MUJ Faculty Supervisor Name)*</p>
+      <label for="internname"></label>
+      <input type="text" id="internname" name="internname" required><br>
+
+      <p>16. Internship Supervisor contact number/(Internal Major Project candidate may write MUJ Faculty Supervisor contact)*</p>
+      <label for="contact"></label>
+      <input type="text" id="contact" name="contact" required><br>
+
+      <p>17. Internship Supervisor email/(Internal Major Project candidate may write MUJ Faculty Supervisor email)*</p>
+      <label for="internemail"></label>
+      <input type="text" id="internemail" name="internemail" required><br>
+
+      <p>18. Name of Company Head HR/CTO/Plant Head/(Internal Major Project candidate may write MUJ)*</p>
+      <label for="headname"></label>
+      <input type="text" id="headname" name="headname" required><br>
+
+      <p>19. Contact Detail of Company Head HR/CTO/Plant Head/(Internal Major Project candidate may write MUJ)*</p>
+      <label for="headcontact"></label>
+      <input type="text" id="headcontact" name="headcontact" required><br>
+
+      <p>20. Whether Internship is converted to full time job offer?*</p>
+      <input type="radio" id="ans" name="ans" value="HTML">
+      <label for="ansyes">Yes</label><br>
+      <input type="radio" id="ans" name="ans" value="HTML">
+      <label for="ansno">No</label><br>
+      <input type="radio" id="ans" name="ans" value="HTML">
+      <label for="ansmaybe">Maybe</label><br>
+
+      <p>21. if placed in other company, mention company name with Package(i.e. Company Name-Package LPA)</p>
+      <label for="placompany"></label>
+      <input type="text" id="placompany" name="placompany"><br>
+
+      <p>22. if going for higher studies, mention name of university(i.e. country name-university name) </p>
+      <label for="higher"></label>
+      <input type="text" id="higher" name="higher"><br>
+
+      <p>23. if going for higher studies, mention score of GATE/GMAT/GRE/CAT/Others(i.e. GRE-280/300) </p>
+      <label for="scoregre"></label>
+      <input type="text" id="scoregre" name="scoregre"><br>
+
+      <p>24. if planned entrepreneurship, mention name of startup </p>
+      <label for="startup"></label>
+      <input type="text" id="startup" name="startup"><br>
+
+      <p>25. Upload Internship offer letter or guide consent form(Only PDF file will be accepted)</p>
+      <input type="file" id="file" name="file" required>
+      
+      <p>26. Upload higher studies offer/current job offer/self job offer/ any other job offer/valid score cards/LoI/LoE.Please merge all documents in a single .pdf file in case of multiple files.</p>
+      <input type="file" id="myFile" name="filename">
+
+      <p><input type="submit" name="submit" value="Submit"></p>
+
+
+    </div>
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
